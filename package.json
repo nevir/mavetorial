@@ -8,6 +8,7 @@
     "test:style": "./scripts/test:style"
   },
   "devDependencies": {
+    "bower": "1.7.7",
     "eslint": "2.1.0",
     "eslint-friendly-formatter": "1.2.2",
     "eslint-plugin-html": "1.4.0",

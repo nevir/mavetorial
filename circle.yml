@@ -1,3 +1,7 @@
+dependencies:
+  cache_directories:
+    - bower_components
+
 deployment:
   production:
     branch: master

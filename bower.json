@@ -1,0 +1,6 @@
+{
+  "name": "mavetorial",
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.2.4"
+  }
+}

@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
+readonly VULCANIZE="vulcanize --inline-scripts --inline-css"
+readonly HTML_MINIFIER="html-minifier --minify-js --minify-css --remove-comments"
+
 rm -rf dist
 cp -R src/ dist/
+
+$VULCANIZE src/_vendor.html     | $HTML_MINIFIER > dist/_vendor.html
+$VULCANIZE src/_components.html | $HTML_MINIFIER > dist/_components.html

@@ -6,4 +6,5 @@ deployment:
   production:
     branch: master
     commands:
+      - npm run bundle
       - firebase --token=$FIREBASE_TOKEN --non-interactive deploy

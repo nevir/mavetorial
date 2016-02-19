@@ -2,3 +2,5 @@
 set -e
 
 bower install
+# A bit of a hack, but it keeps the static files clean.
+cp bower_components/webcomponentsjs/webcomponents-lite.min.js src/_webcomponents-lite.min.js

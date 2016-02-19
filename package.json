@@ -2,7 +2,14 @@
   "name": "mavetorial",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "test": "./scripts/test",
+    "test:style": "./scripts/test:style"
+  },
   "devDependencies": {
+    "eslint": "2.1.0",
+    "eslint-friendly-formatter": "1.2.2",
+    "eslint-plugin-html": "1.4.0",
     "firebase-tools": "2.2.1"
   }
 }

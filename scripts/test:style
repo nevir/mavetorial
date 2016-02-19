@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+if [[ -d "${CIRCLE_TEST_REPORTS}" ]]; then
+  mkdir -p "${CIRCLE_TEST_REPORTS}/style"
+  eslint --ext .html --ext .js --format junit . > "${CIRCLE_TEST_REPORTS}/style/eslint.xml"
+else
+  eslint --ext .html --ext .js --format node_modules/eslint-friendly-formatter .
+fi

@@ -4,14 +4,19 @@
   "private": true,
   "scripts": {
     "bundle": "./scripts/bundle",
-    "test": "./scripts/test",
-    "test:style": "./scripts/test:style"
+    "dev": "./scripts/dev",
+    "postinstall": "./scripts/postinstall",
+    "test:style": "./scripts/test:style",
+    "test": "./scripts/test"
   },
   "devDependencies": {
     "bower": "1.7.7",
     "eslint": "2.1.0",
     "eslint-friendly-formatter": "1.2.2",
     "eslint-plugin-html": "1.4.0",
-    "firebase-tools": "2.2.1"
+    "firebase-tools": "2.2.1",
+    "http-server": "hancharou/http-server#4092a53",
+    "serve-static": "1.10.2",
+    "vulcanize": "1.14.5"
   }
 }
